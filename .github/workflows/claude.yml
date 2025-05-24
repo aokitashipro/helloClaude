@@ -13,7 +13,7 @@ permissions:
   issues: write
   pull-requests: write
   contents: read
-  metadata: read  # これも追加
+  # metadata: read  # これも追加
 
 jobs:
   claude-response:
