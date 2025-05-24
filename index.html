@@ -9,6 +9,17 @@
 <body>
     <div class="container">
         <h1 class="hello-text">Hello World</h1>
+        <p id="current-time"></p>
     </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('ja-JP');
+            document.getElementById('current-time').textContent = timeString;
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
 </body>
 </html>
